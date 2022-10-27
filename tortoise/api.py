@@ -69,6 +69,7 @@ def download_models(specific_models=None):
 
 
 def get_model_path(model_name, models_dir=MODELS_DIR):
+    print("get_model_path")
     """
     Get path to given model, download it if it doesn't exist.
     """

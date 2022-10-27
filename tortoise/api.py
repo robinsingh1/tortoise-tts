@@ -76,7 +76,7 @@ def get_model_path(model_name, models_dir=MODELS_DIR):
         raise ValueError(f'Model {model_name} not found in available models.')
     model_path = os.path.join(models_dir, model_name)
     if not os.path.exists(model_path) and models_dir == MODELS_DIR:
-        download_models([model_name])
+        "download_models([model_name])"
     return model_path
 
 
